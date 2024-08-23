@@ -6,4 +6,4 @@ RUN go build -o /server .
 # FROM scratch
 # COPY --from=build /server /server
 EXPOSE 3000
-CMD ["ls -l /app", "ls -l /", "/server"]
+CMD ["/server"]
